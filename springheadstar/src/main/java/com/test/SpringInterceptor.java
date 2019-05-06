@@ -1,6 +1,7 @@
 package com.test;
 
 import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.context.request.WebRequestInterceptor;
@@ -24,13 +25,12 @@ import java.io.UnsupportedEncodingException;
  * @see [相关类/方法]（可选）
  * @since [产品/模块版本] （可选）
  */
-@Configuration
+@Component
 public class SpringInterceptor implements WebRequestInterceptor {
 
 	@Override
 	public void preHandle(WebRequest request) throws Exception {
 		System.out.println("121312312");
-
 	}
 
 	@Override

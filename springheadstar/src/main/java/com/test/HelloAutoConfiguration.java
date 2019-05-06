@@ -17,7 +17,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  */
 @Configuration
 @ConditionalOnWebApplication //web应用才生效
-
 public class HelloAutoConfiguration  extends WebMvcConfigurerAdapter {
 //@ConditionalOnProperty(prefix = "hello", value = "enable", matchIfMissing = true)
 	/**
